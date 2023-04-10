@@ -1,7 +1,7 @@
 import 'dart:async';
 
 prac_exception() {
-  test4();
+  test5();
 }
 
 //実験１
@@ -51,6 +51,23 @@ test4() {
     print("Exceptionを検知しました");
     print(e); //発生した例外の型(FormatExceptionなど)をeに格納
     print(s); //エラーが発生したスタックトレースをsに格納
+  }
+}
+
+//実験５
+// finallyを用いた場合
+// tryでもcatchでもどちらの処理でもfinallyを実施していることを確認
+test5() {
+  print("test5処理を開始します");
+  try {
+    print("無事処理を実行");
+    // format_error_code();
+  } catch (e, s) {
+    print("Exceptionを検知しました");
+    print(e); //発生した例外の型(FormatExceptionなど)をeに格納
+    print(s); //エラーが発生したスタックトレースをsに格納
+  } finally {
+    print("finally 実行");
   }
 }
 
