@@ -1,5 +1,5 @@
-import 'day230409/prac_async.dart'; //day230409
+import 'day230410/prac_exception.dart'; //day230410
 
 void main() {
-  prac_async(); //day230409
+  prac_exception(); //day230410
 }
